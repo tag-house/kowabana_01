@@ -1,0 +1,63 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <link rel="stylesheet" href="jquery-mobile/jquery.mobile-1.4.5.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="jquery/jquery-1.11.3.min.js"></script>
+    <script src="jquery-mobile/jquery.mobile-1.4.5.min.js"></script>
+    <script src="js/main.js"></script>
+</head>
+<body onload="onLoad()">
+    <div data-role="page" id="tokaido-page">
+        <div data-role="header" data-position="fixed" class="jqm-header-custom" data-theme="c" id="header">
+            <h1>怖い話</h1>
+        </div>
+        <div data-role="content">
+            <ul id="title-list" data-role="listview"></ul>
+        </div>
+    
+        <div data-role="footer" data-position="fixed"> 
+            <div data-role="navbar" class="tabbar">
+                <ul>
+                    <li><a href="#tokaido-page" class="ui-btn-active ui-state-persist" data-icon="custom" id="train">一覧</a></li>
+                    <li><a href="#tohoku-page" data-icon="custom" id="train">お気に入り</a></li>
+                </ul>
+            </div>
+        </div> 
+    </div>
+    
+    <div data-role="page" id="tohoku-page">
+        <div data-role="header" data-position="fixed" data-theme="c">
+            <h1>お気に入り</h1>
+        </div>
+        <div data-role="content">
+            <ul id="favorite-list"/>
+        </div>
+        
+        <div data-role="footer" data-position="fixed"> 
+            <div data-role="navbar" class="tabbar">
+                <ul>
+                    <li><a href="#tokaido-page" data-icon="custom" id="train">Tokaido</a></li>
+                    <li><a href="#tohoku-page" class="ui-btn-active ui-state-persist" data-icon="custom" id="train">Tohoku</a></li>
+                </ul>
+            </div>
+        </div> 
+    </div>
+    
+    <div data-role="page" id="story-page">
+        <div data-role="header" data-position="fixed" data-theme="c">
+            <h1 id="title"></h1> 
+            <a href="index.html" data-icon="back" data-rel="back" class="ui-btn-left">Back</a>
+        </div>
+        
+        <div data-role="content">
+            <p id="story-area"></p>
+        </div>
+        <div>
+            <p><a href="#" onclick="favoriteStory(storyId)">テスト保存</a></p>
+            <p><a href="#" onclick="favoriteStoryDisplay(storyId)">テストゲット</a></p>
+    </div>
+</body>
+</html>
