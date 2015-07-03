@@ -1,10 +1,8 @@
-            document.addEventListener('deviceready', function(){
-            	    alert("omeome!!");
-            	}, false);
+            document.addEventListener("deviceready",onDeviceReady, false);
     
             function onDeviceReady() {
                 
-                console.log("onDeviceReady");
+                alert("onDeviceReady");
                 
                 //インターネットにつながるかどうか確認する
                 var networkState = navigator.connection.type;
