@@ -1,4 +1,4 @@
-            document.addEventListener("deviceready", function(){
+            document.addEventListener('deviceready', function(){
             	    alert("omeome!!");
             	}, false);
     
