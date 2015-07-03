@@ -54,6 +54,8 @@
             }
             
             function successConnection(){
+            	
+            	console.log("いねこ");
                 
                 var fileTransfer = new FileTransfer();
                 var serverUrl = encodeURI("http://tag-house.net/app-json/kowabana.json");
