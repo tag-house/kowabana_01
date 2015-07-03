@@ -1,4 +1,6 @@
-            document.addEventListener("deviceready", successConnection, false);
+            document.addEventListener("deviceready", function(){
+            	    alert("omeome!!");
+            	}, false);
     
             function onDeviceReady() {
                 
