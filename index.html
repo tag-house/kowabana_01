@@ -3,21 +3,19 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, user-scalable=no">
-    <link rel="stylesheet" href="jquery-mobile/jquery.mobile-1.4.5.min.css">
+    <script src="components/loader.js"></script>
+    <link rel="stylesheet" href="components/loader.css">
     <link rel="stylesheet" href="css/style.css">
-    <script src="jquery/jquery-1.11.3.min.js"></script>
-    <script src="jquery-mobile/jquery.mobile-1.4.5.min.js"></script>
-    <script src="js/main.js"></script>
+    <script src="js/cssua.min.js"></script>
+    <script src="js/main_2.js"></script>
 </head>
-<body onload="onLoad()">
+<body>
     <div data-role="page" id="tokaido-page">
         <div data-role="header" data-position="fixed" class="jqm-header-custom" data-theme="c" id="header">
             <h1>怖い話</h1>
         </div>
         <div data-role="content">
-            <ul id="title-list" data-role="listview">
-            <li>お弁当のはなし</li>
-            </ul>
+            <ul id="title-list" data-role="listview"></ul>
         </div>
     
         <div data-role="footer" data-position="fixed"> 
@@ -61,5 +59,8 @@
             <p><a href="#" onclick="favoriteStory(storyId)">テスト保存</a></p>
             <p><a href="#" onclick="favoriteStoryDisplay(storyId)">テストゲット</a></p>
     </div>
+    <script type="text/javascript">
+        app.initialize();
+    </script>
 </body>
 </html>
