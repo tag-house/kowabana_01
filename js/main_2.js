@@ -2,7 +2,8 @@
 var app = {
     // Application Constructor
     initialize: function() {
-    	console.log("Initialize!!!Success!!!")
+    	console.log("Initialize!!!Success!!!");
+    	alert("Initialize!!!Success!!!");
         this.bindEvents();
     },
     // Bind Event Listeners
