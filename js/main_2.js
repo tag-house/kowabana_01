@@ -2,8 +2,6 @@
 var app = {
     // Application Constructor
     initialize: function() {
-    	console.log("Initialize!!!Success!!!");
-    	alert("Initialize!!!Success!!!");
         this.bindEvents();
     },
     // Bind Event Listeners
@@ -11,6 +9,7 @@ var app = {
     // Bind any events that are required on startup. Common events are:
     // 'load', 'deviceready', 'offline', and 'online'.
     bindEvents: function() {
+    	alert("bindEvents!!!Success!!!");
         document.addEventListener('deviceready', this.onDeviceReady, false);
     },
     // deviceready Event Handler
