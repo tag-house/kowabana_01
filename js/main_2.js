@@ -2,6 +2,7 @@
 var app = {
     // Application Constructor
     initialize: function() {
+    	console.log("Initialize!!!Success!!!")
         this.bindEvents();
     },
     // Bind Event Listeners
