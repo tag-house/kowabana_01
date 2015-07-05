@@ -10,9 +10,7 @@ var app = {
     // 'load', 'deviceready', 'offline', and 'online'.
     bindEvents: function() {
     	alert("bindEvents!!!Success!!!");
-        document.addEventListener('load', function(){
-            document.addEventListener('deviceready', this.onDeviceReady);
-        });
+        document.addEventListener('DOMContentLoaded', this.onDeviceReady);
     },
     // deviceready Event Handler
     //
@@ -22,7 +20,7 @@ var app = {
     	alert("onDeviceReady!!!Success!!!");
                 
         //インターネットにつながるかどうか確認する
-        var networkState = navigator.connection.type;
+      /*  var networkState = navigator.connection.type;
 
         var states = {};
         states[Connection.UNKNOWN]  = 'Unknown connection';
@@ -44,7 +42,9 @@ var app = {
             //document.body.onload=locationhttp;
             navigator.notification.alert('コネクションタイプ' + "\n" + states[networkState], null, "ネットワーク接続成功");
             app.successConnection();
-        }
+        }*/
+        
+        app.successConnection();
     },
     noConnection: function(){
         
