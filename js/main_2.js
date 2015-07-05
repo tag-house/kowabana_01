@@ -10,7 +10,7 @@ var app = {
     // 'load', 'deviceready', 'offline', and 'online'.
     bindEvents: function() {
     	alert("bindEvents!!!Success!!!");
-        document.addEventListener('deviceready', this.onDeviceReady);
+        document.addEventListener('load', this.onDeviceReady);
     },
     // deviceready Event Handler
     //
