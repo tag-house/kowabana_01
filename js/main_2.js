@@ -10,11 +10,9 @@ var app = {
     // 'load', 'deviceready', 'offline', and 'online'.
     bindEvents: function() {
     	alert("bindEvents!!!Success!!!");
-        if(typeof device.cordova === 'undefined'){
-            document.addEventListener("deviceready", this.onDeviceReady, false);
-        }else{
-            this.onDeviceReady();
-        }
+        document.addEventListener('DOMContentLoaded', function(){
+            document.addEventListener('deviceready', onDeviceReady);
+        });
     },
     // deviceready Event Handler
     //
