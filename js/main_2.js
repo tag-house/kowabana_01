@@ -62,10 +62,12 @@ var app = {
             serverUrl,
             fileUrl,
             function(entry) {
+            	alert("download::Success!!!");
                 console.log("download 成功: " + entry.fullPath);
                 app.jsonGet();
             },
             function(error) {
+            	alert("download::Error!!!");
                 console.log("download error source " + error.source);
                 console.log("download error target " + error.target);
                 console.log("upload error code" + error.code);
