@@ -52,6 +52,7 @@ var app = {
         
     },
     successConnection: function(){
+    	alert("successConnection!!!Success!!!");
         
         var fileTransfer = new FileTransfer();
         var serverUrl = encodeURI("http://tag-house.net/app-json/kowabana.json");
@@ -73,6 +74,7 @@ var app = {
         );
     },
     jsonGet: function(){
+    	alert("jsongGet!!!Success!!!");
         //ロリポップのサーバーにあるJsonを取得し怖い話のタイトルを表示
         jQuery.getJSON("cdvfile://localhost/persistent/path/to/downloads/",function(json){ //←path/to/downloads/ 以下に kowabana.jsonなどのファイル名を書くとエラーになる
             
