@@ -10,7 +10,7 @@ var app = {
     // 'load', 'deviceready', 'offline', and 'online'.
     bindEvents: function() {
     	alert("bindEvents!!!Success!!!");
-        if(typeof window.device === 'undefined'){
+        if(typeof device.cordova === 'undefined'){
             document.addEventListener("deviceready", this.onDeviceReady, false);
         }else{
             this.onDeviceReady();
